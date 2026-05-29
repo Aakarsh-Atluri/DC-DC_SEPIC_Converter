@@ -5,7 +5,7 @@
 
 Hardware implementation of a Single-Ended Primary-Inductor Converter (SEPIC) designed to operate in both buck and boost modes. This repository contains the project report, hardware design notes, and waveform analysis for operation in both Continuous Conduction Mode (CCM) and Discontinuous Conduction Mode (DCM).
 
-## 👥 Team Members
+##  Team Members
 - **Aakarsh Atluri** (240002014) 
 - **Chukka Hemanth Kumar Naidu** (240002021)
 - **Kavya Jigarkumar Shah** (240002029)
@@ -15,7 +15,7 @@ _Department of Electrical Engineering, Indian Institute of Technology Indore (II
 
 ---
 
-## ⚡ Project Specifications
+## Project Specifications
 
 | Parameter | Value |
 | :--- | :--- |
@@ -27,7 +27,7 @@ _Department of Electrical Engineering, Indian Institute of Technology Indore (II
 
 ---
 
-## 🧠 Working Principle
+## Working Principle
 
 A Single-Ended Primary Inductor Converter (SEPIC) allows the output voltage to be either greater or less than the input voltage. This topology ensures a smooth, **non-inverted** output voltage. It consists of two inductors, two capacitors, a diode, and a switching MOSFET.
 
@@ -36,7 +36,7 @@ A Single-Ended Primary Inductor Converter (SEPIC) allows the output voltage to b
 
 ---
 
-## 🛠️ Hardware Setup
+## Hardware Setup
 
 The physical prototype is divided into two main stages to isolate the control logic from the high-current power paths:
 
@@ -53,7 +53,7 @@ The physical prototype is divided into two main stages to isolate the control lo
 
 ---
 
-## 📊 Results and Analysis
+## Results and Analysis
 
 ### 1. Voltage Regulation
 The converter successfully demonstrated both step-down and step-up capabilities using a 15V DC input:
@@ -66,7 +66,7 @@ The converter successfully demonstrated both step-down and step-up capabilities 
 
 ---
 
-## 💡 Hardware Design & Prototyping Notes
+## Hardware Design & Prototyping Notes
 
 For students or engineers attempting to recreate this circuit, note the following physical constraints:
 - **Avoid Breadboards for Power:** Initial open-loop testing on breadboards can cause violent LC resonance and destructive voltage spikes due to stray inductance. Always move the high-current loop (Input Cap -> MOSFET -> Coupling Cap -> Diode) to a soldered perfboard or PCB as early as possible.
@@ -74,4 +74,4 @@ For students or engineers attempting to recreate this circuit, note the followin
 - **Ground Separation:** The power stage ground and the logic/function generator ground should only meet at a single "Star Point" (ideally at the MOSFET Source pin) to prevent switching noise from resetting the control ICs.
 
 ---
-_Documentation derived from B1 Group 6 Power Electronics Lab Report._
+
