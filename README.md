@@ -60,4 +60,3 @@ For students or engineers attempting to recreate this circuit, note the followin
 - **Ground Separation:** The power stage ground and the logic/function generator ground should only meet at a single "Star Point" (ideally at the MOSFET Source pin) to prevent switching noise from resetting the control IC.
 
 ---
-_Documentation derived from B1 Group 6 Power Electronics Lab Report._
